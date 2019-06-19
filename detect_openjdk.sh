@@ -13,7 +13,9 @@ oracle_jdk_detected=0
 for i in $(find / -name java -perm /o=x \( -type f -or -type l \)); do
   echo -n "Checking $i ..."
   java_version_output=$($i -version 2>&1)
-  if [[ "$java_version_output" == *"OpenJDK"* ]]; then
+  echo -n "$java_version_output" | grep -qi OpenJDK
+  retcode=$?
+  if [[ "$retcode" == 0 ]]; then
     echo -e '\e[1;32mok\e[0m'
     echo -en '\e[1;30m'
     echo "$java_version_output"
