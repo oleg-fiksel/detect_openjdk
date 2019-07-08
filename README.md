@@ -8,3 +8,13 @@ This can be used to run in the CI pipeline to check if OpenJDK is used in a Dock
 
 * 1 - at least one executable found that is named "java" and has no "OpenJDK" in it's output when run with argument "-version"
 * 0 - otherwise
+
+# Examples
+
+## Only OpenJDK java found (exit code 0)
+
+![Positive](screenshots/screenshot_positive.png)
+
+## Non-OpenJDK java found (exit code >= 1)
+
+![Negative](screenshots/screenshot_negative.png)
