@@ -1,0 +1,18 @@
+variables:
+  DOCKER_DRIVER: overlay
+
+stages:
+  - test
+
+test:positive:
+  stage: test
+  image: busybox
+  script:
+    - rm -rf tests/oracle
+    - ./detect_openjdk.sh
+
+test:negative:
+  stage: test
+  image: busybox
+  script:
+    - ./tests/invert_exitcode.sh ./detect_openjdk.sh
