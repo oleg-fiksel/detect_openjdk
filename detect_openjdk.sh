@@ -1,5 +1,9 @@
 #!/bin/sh
 
+VERSION=1.0.0
+
+echo "---==( $0 Version ${VERSION} )==---"
+
 # This scrips searches for any executable named java on the filesystem
 # and runs it with -version parameter
 # the output is validated if it's matching the substring of "OpenJDK"
