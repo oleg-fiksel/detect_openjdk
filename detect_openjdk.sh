@@ -32,7 +32,7 @@ EOF
 # Main function
 #@{inline}```bash
 # Return 0 also if no java is found
-non_opendjk_detected=0
+non_openjdk_detected=0
 # Find all java files, which are executable and not symlinks
 # Known bug: -perm /o=x doesn't work in Mac OS X
 for i in $(find / -name java -perm /o=x \( -type f -or -type l \)); do
@@ -55,10 +55,10 @@ for i in $(find / -name java -perm /o=x \( -type f -or -type l \)); do
     echo -en '\e[1;30m'
     echo "$java_version_output"
     echo -en '\e[0m'
-    non_opendjk_detected=1
+    non_openjdk_detected=1
   fi
 done
 
-exit ${non_opendjk_detected}
+exit ${non_openjdk_detected}
 #@{inline}```
 #@{end}
