@@ -1,0 +1,9 @@
+#!/bin/sh
+echo 'java version "1.7.0"
+Java(TM) SE Runtime Environment (build pxa6470sr9fp20-20151106_01(SR9 FP20))
+IBM J9 VM (build 2.6, JRE 1.7.0 Linux amd64-64 Compressed References 20151019_272770 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR9_20151019_2234_B272770
+JIT  - tr.r11_20151005_102425.01
+GC   - R26_Java726_SR9_20151019_2234_B272770_CMPRSS
+J9CL - 20151019_272770)
+**JCL - 20151105_01 based on Oracle jdk7u91-b15**'

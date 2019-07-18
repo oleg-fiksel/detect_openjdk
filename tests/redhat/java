@@ -1,0 +1,4 @@
+#!/bin/sh
+echo 'java version "1.6.0_0"
+OpenJDK Runtime Environment (IceTea6 1.6) (rhel-1.11.b16.el5-i386)
+OpenJDK Client VM (build 14.0-b16, mixed mode)'
