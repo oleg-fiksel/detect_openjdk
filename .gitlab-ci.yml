@@ -8,7 +8,7 @@ test:positive:
   stage: test
   image: busybox
   script:
-    - rm -rf tests/oracle
+    - rm -rf tests/oracle tests/ibm
     - ./detect_openjdk.sh
 
 test:negative:
